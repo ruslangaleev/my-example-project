@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Minio;
@@ -10,7 +10,7 @@ using MyExampleProject.S3.Configurations;
 namespace MyExampleProject.ApiControllers
 {
     /// <summary>
-    /// Взаимодействие с облачным хранилищем через S3, напримере Selectel.
+    /// Взаимодействие с облачным хранилищем через S3, например Selectel.
     /// </summary>
     [Route("api/s3")]
     [ApiController]

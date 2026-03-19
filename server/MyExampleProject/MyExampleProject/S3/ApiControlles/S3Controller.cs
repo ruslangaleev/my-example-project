@@ -38,7 +38,7 @@ namespace MyExampleProject.ApiControllers
         /// Скачивает файл с хранилища и предоставит содержимое файла.
         /// </summary>
         /// <param name="pathToFile">Важно чтобы путь был через косую черту /. Например: dir1/dir2</param>
-        /// <param name="fileName">Имя файла, который будет скачен.</param>
+        /// <param name="fileName">Имя файла, который будет скачан.</param>
         /// <returns></returns>
         [HttpGet("{pathToFile}/{fileName}")]
         public async Task<IActionResult> GetFileAsync(string pathToFile, string fileName)

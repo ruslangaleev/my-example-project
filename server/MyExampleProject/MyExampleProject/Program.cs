@@ -39,8 +39,7 @@ static partial class Program
 
         services.Configure<FileStorageByS3Config>(opt =>
         {
-            var successfully = bool.TryParse(isActiveString, out bool isActive);
-            // Logger successfully
+            _ = bool.TryParse(isActiveString, out bool isActive);
             opt.IsActive = isActive;
             opt.AccessKey = accesskey;
             opt.SecretKey = secretKey;
